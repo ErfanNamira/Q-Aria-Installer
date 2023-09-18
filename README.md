@@ -11,7 +11,7 @@ To install Q-Aria Installer, run the following command:
 ```
 curl -O https://raw.githubusercontent.com/ErfanNamira/Q-Aria-Installer/main/qAria.sh && chmod +x qAria.sh && sed -i -e 's/\r$//' qAria.sh && sudo apt update && sudo apt install -y dialog && ./qAria.sh
 ```
-## Usage 🚀
+## Usage 🔧
 Once you've completed the installation, you can start using the installed components:
 
 **qBittorrent-nox**: Access qBittorrent-nox by navigating to http://your-server-ip:8080 in your web browser.
