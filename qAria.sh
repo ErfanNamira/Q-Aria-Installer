@@ -115,8 +115,8 @@ install_ariafileserver_http() {
     # Step 3: Ask the user to enter the password for AriaFileServer
     password=$(dialog --passwordbox "Enter the password for AriaFileServer:" 10 50 2>&1 >/dev/tty)
 
-    # Use passlib to generate the password hash using sha256_crypt
-	hashed_password=$(python3 -c "from passlib.hash import sha256_crypt; print(sha256_crypt.using(rounds=5000).hash('$password'))")
+    # Generate SHA-256 hash using hashlib
+    hashed_password=$(python3 -c "import hashlib; print(hashlib.sha256('$password'.encode('utf-8')).hexdigest())")
 
     # Step 4: Ask the user for the port that AriaFileServer will run on
     ariafileserver_port=$(dialog --inputbox "Enter the port for AriaFileServer (e.g., 2082):" 10 50 2082 2>&1 >/dev/tty)
