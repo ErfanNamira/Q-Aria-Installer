@@ -135,9 +135,9 @@ install_ariafileserver_http() {
     sudo apt install -y python3-pip
     pip3 install flask passlib
 
-    # Step 7: Edit AriaFileServerHTTP.py to set the username, hashed password, and port
-    sed -i "s|'aria':.*|'$username': '$hashed_password',|" "$ariafileserver_path"
-    sed -i "s/port=2082/port=$ariafileserver_port/" "$ariafileserver_path"
+   # Step 7: Edit AriaFileServerHTTP.py to set the username, hashed password, and port
+   sed -i "s|'aria':.*|'$username': '$hashed_password',|" "$ariafileserver_path"
+   sed -i "s/port=2082/port=$ariafileserver_port/" "$ariafileserver_path"
 
     # Step 8: Create systemd service for AriaFileServer HTTP version
     service_file="/etc/systemd/system/ariafileserverhttp.service"
