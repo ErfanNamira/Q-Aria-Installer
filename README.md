@@ -14,11 +14,11 @@ curl -O https://raw.githubusercontent.com/ErfanNamira/Q-Aria-Installer/main/qAri
 ## Usage 🚀
 Once you've completed the installation, you can start using the installed components:
 
-qBittorrent-nox: Access qBittorrent-nox by navigating to http://your-server-ip:8080 in your web browser.
+**qBittorrent-nox**: Access qBittorrent-nox by navigating to http://your-server-ip:8080 in your web browser.
 
-AriaFileServer: Use AriaFileServer to download your files by visiting http://your-server-ip:2082 in your web browser.
+**AriaFileServer**: Use AriaFileServer to download your files by visiting http://your-server-ip:2082 in your web browser.
 
-Cloudflare Warp: Please set the proxy server to 127.0.0.1:40000 in qBittorrent Web UI by following Options -> Connection -> Proxy Server -> Type: SOCKS5.
+**Cloudflare Warp**: Please set the proxy server to 127.0.0.1:40000 in qBittorrent Web UI by following Options -> Connection -> Proxy Server -> Type: SOCKS5.
 
 To check Cloudflare Warp status, run:
 ```
