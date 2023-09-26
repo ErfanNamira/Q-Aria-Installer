@@ -1,5 +1,7 @@
 # Q-Aria Installer 🚀
 
+## 🔴 Experimental 
+
 Q-Aria Installer is a Bash script designed to simplify the installation and configuration of essential tools on your Ubuntu Server. With Q-Aria Installer, you can effortlessly set up the following components:
 
 - 📥 **qBittorrent-nox**: A lightweight and efficient BitTorrent client.
